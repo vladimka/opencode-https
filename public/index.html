@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTPS Server</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 3rem;
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.3);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      color: #a5b4fc;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+      margin-bottom: 2rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      text-align: left;
+    }
+
+    .info-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .info-item .label {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .info-item .value {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 0.75rem;
+    }
+
+    .footer a {
+      color: rgba(99, 102, 241, 0.6);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: rgba(99, 102, 241, 1);
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 2rem 1.5rem; }
+      h1 { font-size: 1.5rem; }
+      .info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">AI-generated</div>
+    <h1>HTTPS Server is running</h1>
+    <p class="subtitle">
+      Этот сервер был полностью создан искусственным интеллектом —
+      исходный код, SSL-сертификаты и конфигурация сгенерированы
+      в автоматическом режиме.
+    </p>
+    <div class="divider"></div>
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="label">Протокол</div>
+        <div class="value">HTTPS (TLS 1.3)</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Платформа</div>
+        <div class="value">Node.js + TypeScript</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Сертификат</div>
+        <div class="value">mkcert (локальный CA)</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Логирование</div>
+        <div class="value">Morgan (combined)</div>
+      </div>
+    </div>
+    <div class="footer">
+      Создано <a href="https://opencode.ai" target="_blank" rel="noopener">opencode</a> &mdash; AI-агентом
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "https-server",
+  "version": "1.0.0",
+  "description": "Simple HTTPS server",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc && node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "morgan": "^1.11.0"
+  }
+}
