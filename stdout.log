@@ -1,2 +1,0 @@
-HTTPS server listening on https://localhost:4433
-::1 - - [19/Jun/2026:14:24:06 +0000] "GET / HTTP/1.1" 200 - "-" "curl/8.13.0"

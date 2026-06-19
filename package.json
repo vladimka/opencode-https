@@ -4,9 +4,9 @@
   "description": "Simple HTTPS server",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "cd client && npm run build && cd .. && tsc",
     "start": "node dist/server.js",
-    "dev": "tsc && node dist/server.js"
+    "dev": "npm run build && node dist/server.js"
   },
   "keywords": [],
   "author": "",
