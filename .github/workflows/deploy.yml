@@ -22,6 +22,8 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: client
+        env:
+          BASE_URL: /opencode-https/
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
